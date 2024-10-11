@@ -1,0 +1,3 @@
+C:/Users/serhi/CLionProjects/Text-based-Adventure/cmake-build-debug/CMakeFiles/Story_game.dir
+C:/Users/serhi/CLionProjects/Text-based-Adventure/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/serhi/CLionProjects/Text-based-Adventure/cmake-build-debug/CMakeFiles/rebuild_cache.dir

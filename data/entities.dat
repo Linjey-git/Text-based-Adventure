@@ -1,0 +1,48 @@
+n:Dragon
+h:20
+d:6
+a:8
+i:Amulet of the Heavens
+end
+n:null
+h:0
+d:0
+a:0
+i:null
+end
+n:Bandits
+h:10
+d:5
+a:8
+i:Lightweight Chain Mail Tunic
+end
+n:Chest
+h:0
+d:0
+a:0
+i:Sword
+end
+n:Blacksmith
+h:6
+d:2
+a:1
+i:Blacksteel Sword
+end
+n:Guardians
+h:34
+d:20
+a:18
+i:Iron Sword
+end
+n:Dead Guardians
+h:0
+d:0
+a:0
+i:Iron Sword
+end
+n:Wizard
+h:15
+d:10
+a:6
+i:null
+end

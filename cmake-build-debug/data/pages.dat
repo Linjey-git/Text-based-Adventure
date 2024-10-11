@@ -1,0 +1,163 @@
+k:awakening_in_forest
+d:
+You wake up in a dark forest with no idea how you got there. You notice that you have a backpack with some basic supplies such as water, some coins and a map. Also you have a necklace. You look at the map and see that you do not understand it at all.
+e:null
+o:Follow the river that runs through the forest.|n|bandits_meeting
+o:Climb to the top of a nearby hill to get a better view.|n|far_away_town
+o:Look for a path or trail through the trees.|n|find_cave
+end
+k:bandits_meeting
+d:You come across a group of hostile bandits.
+e:Bandits
+o:Run away as fast as you can.|n|failed_escape
+o:Fight them with your bare hands.|a|fight_bandits
+o:Try to negotiate with them.|n|talk_to_bandits
+end
+k:fight_bandits
+d:death
+e:null
+o:Fight|n|fight_bandits
+end
+k:failed_escape
+d:The bandits still notice you and catch up. They will knock you out with batons and throw you somewhere in the forest.
+e:null
+o:Continue|n|awakening_in_forest
+end
+k:talk_to_bandits
+d:Starting a conversation with them, you ask them about the map and where you are now. One of them says that you are in the forest of the Great South, and for information about the map, they ask for some kind of payment. Your eyes are confused and you start rummaging through your pockets and find nothing interesting except a couple of coins. The thugs say that's not enough, but you remember that there is a pendant with a stone around your neck that looks precious.
+e:null
+o:Give them the stone.|n|dialogue_with_dominic
+o:Hide the stone with a hand and say goodbye.|n|far_away_town
+end
+k:dialogue_with_dominic
+d:You pass this stone to the nearest bandit and he begins to grope it with animalistic interest. Then the stone goes to the leader of this group. He begins to look closely at your jewelry and you begin to read fear and then horror in his eyes. He wounds his ground and falls to his knees. His team looks at their leader in surprise, but after he throats them, they follow suit. You looked at them in surprise and started to open your mouth to pick them up, but they quickly took your card and started looking around. One of them served you a drink that smelled like honey. You drank it and felt a sweet taste with elements of alcohol and then realized that it was mead. You thank him for being so honest with you and after that the leader says that his name is Dominic and that he knows what kind of map it is and can tell you how to get there. Dominic tells you how to get there and gives you a sword, you say thank you and you say goodbye.
+e:Bandits
+o:Get an armour...|p|far_away_town
+end
+k:far_away_town
+d:When you leave the forest, you will have a very beautiful view of the steppes on the horizon. Somewhere in the distance you see a city and you decided to...
+e:null
+o:Head towards the town.|n|walk_to_town
+o:Stay in the forest and continue exploring.|n|explore_forest
+end
+k:find_cave
+d:As you were walking along a path in the forest, enjoying the beauty of nature, your eyes happened to look up and you noticed a small hill. It instantly caught your attention and you climbed it to enjoy the panorama of the surrounding landscape. Then, when you looked down, you saw a cave that was a part of this beautiful sight. You decided to...
+e:null
+o:Enter the cave.|n|find_chest
+o:Stay outside and continue exploring.|n|meet_dragon
+end
+k:find_chest
+d:You find a treasure chest.
+e:Chest
+o:Leave the chest alone.|n|meet_dragon
+o:Open the chest.|n|open_chest
+end
+k:open_chest
+d:You find a powerful sword.
+e:Chest
+o:Leave the sword in the chest.|n|meet_dragon
+o:Keep the sword.|p|meet_dragon
+end
+k:meet_dragon
+d:As you continued your eyes caught sight of something large that seemed quite far away from you. As you got closer, you realized it was a Great Dragon, magnificent and powerful. Its majesty and scale were impressive, and its breath could be felt from a great distance. You stood with a smile on your face, captivated by this unique visual experience that was remembered forever.
+e:Dragon
+o:Fight the dragon with your bravery.|a|fight_dragon
+o:Try to negotiate with the dragon.|n|talk_to_dragon
+end
+k:fight_dragon
+d:Armed with bravery, I encountered a fierce dragon unexpectedly in a cave. After defeating it, You must now make your way out and continue your journey, proud of your accomplishment.
+e:null
+o:Continue...|n|far_away_town
+end
+k:talk_to_dragon
+d:After a short conversation with the Dragon, you admitted that you didn't remember anything and were just wandering around by accident when you came across him. Obviously the feeling of losing your memory scared you, but the Dragon seemed to understand your feelings. He decided to support you and handed you an amulet that looked like a symbol of power and protection. He said that this amulet will protect you from all evil forces and will come in handy in difficult situations. you decided to...
+e:Dragon
+o:Take the amulet.|p|thanks_dragon
+o:Leave the amulet.|n|thanks_dragon
+end
+k:thanks_dragon
+d:After that, you thank the dragon and leave the cave back outside. During the next half hour you emerge from the forest and...
+e:null
+o:Continue journey.|n|far_away_town
+end
+k:walk_to_town
+d:As you approach the small town, your eyes catch sight of a beautiful building with a stunning design that stands out from the rest of the structures around it. It seems to call out to you, drawing you in with its charm. You can't resist the temptation to take a closer look, so you head towards the building. As you get closer, you notice the intricate details and the care that went into its construction. You feel a sense of awe and wonder, wondering what kind of place it could be. After admiring the building for a while, you decide to explore more of the town. As you walk around, you hear the sound of metal clanging and sparks flying. You follow the noise until you come across a working blacksmith's shop. You watch as the blacksmith works, fascinated by the way they seem to wield the hammer with ease and precision. The forge is hot and the air is thick with the smell of metal and smoke. As you get closer, the blacksmith notices you and greets you with a friendly smile, you do the same.
+e:null
+o:Look for a new weapon from the blacksmith.|n|new_weapon_blacksmith_1
+o:Talk to the blacksmith and learn about the town's history.|n|blacksmith_talk
+end
+k:blacksmith_talk
+d:The town you find yourself in has a rich and storied history that stretches back many years. Originally settled by a group of pioneers, the town began as a small collection of cabins in the wilderness. The pioneers were hardy and resourceful, and they built the town from scratch using only the materials they could find in the surrounding forest. Over time, the town grew and prospered, becoming an important center of trade and commerce in the region. Farmers from the surrounding countryside would come to town to sell their goods, and merchants from other towns would come to buy them. The town also became known for its skilled craftsmen, who would create beautiful objects of all kinds, from pottery to jewelry. Despite its success, the town was not immune to the challenges of life in the wild west. It was raided several times by bandits and outlaws, who would steal goods and cause destruction. But the townspeople were resilient, and they always managed to bounce back, rebuilding and repairing what had been damaged.
+e:null
+o:Continue...|n|ask_job
+end
+k:new_weapon_blacksmith_1
+d:You take all your coins out of your pockets and show them to the blacksmith, who scrunches his nose thoughtfully and goes into the room behind the counter. You wait impatiently, watching his every move closely. After some time, the blacksmith brings out several variants of various swords and begins to examine them carefully. Your eyes tell you that you can't stand this tense moment and you wait impatiently for the blacksmith to choose your perfect sword.
+e:null
+o:Continue...|n|new_weapon_blacksmith_2
+end
+k:new_weapon_blacksmith_2
+d:A few minutes pass while the blacksmith chooses the best sword for you. You stand still with a plot in your hand and look with gentle eyes at the blacksmith who seems very serious and focused on his task. Finally, he settles on one sword, choosing it as the perfect match for you. The blacksmith offers it to you and says, "You can use this sword in any battle. It will be your finest ally on your path because it is so forceful and cutting." You take the sword out of his hands and notice how lightweight and easy to use it is. When you glance up at each other, you can tell that the blacksmith is proud of what he makes by himself.
+e:Blacksmith
+o:Take the sword and run|p|running_to_the_forest
+o:Thank the blacksmith, but leave the sword|n|ask_job
+end
+k:running_to_the_forest
+d:You started shaking with anxiety as soon as you grabbed the sword from the blacksmith's hands. You made the decision that it would be wiser to steal this blade, so you immediately began to flee as far as you can. You turn around and dash back to the city's main gate, though, as you recall it. You make the decision to flee to the forest once more after realising that you won't be able to keep the sword and risk losing your freedom. Even though you are having trouble breathing because your heart is beating so quickly, you continue running because you want to leave the city as soon as possible. As soon as the crowns of trees begin to cover you, you stop and try to walk calmly without fearing anything.
+e:null
+o:Continue...|n|explore_forest
+end
+k:explore_forest
+d:You continue your journey deeper into the forest, enjoying nature and silence, but suddenly you hear voices. They become louder and louder and you realize that they are people. You hide behind a tree and look in the direction of the voices. You see several people moving towards the clearing between the forest and the city, where the city guard might have seen you earlier. You get a little uneasy, but you continue to watch from a safe distance.
+e:Guardians
+o:Continue hiding|n|dead_guardians
+o:Fight with them|a|fight_with_guardians
+end
+k:fight_with_guardians
+d:death
+e:null
+o:Fight|n|fight_with_guardians
+end
+k:dead_guardians
+d:You made the decision to stay still and observe the situation without taking a chance. Your persistence had repercussions. The trees, which had previously been immobile, abruptly started to move slowly. It soon became apparent that they are Ents, rather than regular trees. The guards began fighting the Ents because they were panicked and unsure of what to do. Trees sensed the danger and defended themselves, killing the guards with ease. The Ents then went back to their underground lairs, leaving you with a hazy memory of killed guards and an odd visual experience.
+e:Dead Guardians
+o:Take sword from the corpse and get out of there.|p|run_to_house
+o:Run away from there|n|run_to_house
+end
+k:ask_job
+d:You were about to inquire with the blacksmith about the prospect of working in his shop when you decided against it because of your scant prior expertise. You said, "I'm seeking for a location where I can find myself as a person. I don't have much experience in blacksmithing, but I want to learn. Having said that, would you be willing to let me try working in your workshop?" The blacksmith gave you a long look before saying, "I can teach you the blacksmithing craft if you are prepared to put in the effort. But you'll have to put in a lot of effort and time. For it, are you prepared?" As soon as you declared yourself prepared, you got to work at the blacksmith's shop.
+e:null
+o:Work hard|n|work_hard
+o:Work|n|work
+end
+k:work_hard
+d:You put forth a lot of effort at the blacksmith shop. You gave your all every day, rising early in the morning and working until late at night to learn the craft of a blacksmith. You have arrived at the level where your head is able to remedy any mistakes and your hands perform the majority of tasks automatically. In the end, you surpass the master, and the city's inhabitants start to frequent your forge.
+e:null
+o:THE END...|e|-
+end
+k:work
+d:You put in the effort in the blacksmith shop. You worked every day to learn the trade of a blacksmith. You have reached the point where your head can correct mistakes and your hands do most tasks automatically. Eventually, you open a new forge and start enjoying life.
+e:null
+o:THE END...|e|-
+end
+k:run_to_house
+d:Fleeing from the scene of the crime, you hurry into the forest. But suddenly a large gloomy house appears in front of the eyes in the center of the clearing. You knock on the door because there is nothing you can do, but no one answers. Regardless, you still choose to participate. You are impressed by the interior and atmosphere of the house. Every corner envelops you with its mysterious attraction. Admiring the space and furniture, you feel the atmosphere pressing in on you. You realize you're not the only person in the house when you suddenly hear footsteps. You are trying to find a place to hide when you see two people enter the corridor. One of them takes such a step that the shackles rattle can be heard. This man wears shackles on his hands and his head is also covered with some kind of cloth, while another man holds a chain. He is dressed very much and like a sorcerer. Your body tenses as your heart races as you try not to give away your location.
+e:Wizard
+o:Fight him|a|fight_with_him
+o:Talk to him|n|talk_to_him
+end
+k:talk_to_him
+d:Write a short text about the fact that you decided to come out of hiding and talk to the sorcerer. He was startled by your unexpected behavior and immediately threw a lightning spell at you. But you didn't feel anything and stood in a stupor for a while. Chucklin also didn't understand at first, but then he saw how the necklace was shining on your chest. You saw it too and touched the necklace with your hand. Then you noticed the mage's eyes full of terror and interest. After a few seconds of silence, the magician will speak first. He said he wants you to become his disciple. You agree and learn magic, you really liked magic and over a year you find out that your necklace is a magical artifact, which is a necklace, is a key element in the most powerful cult that controls the universe. It has extraordinary power, which indicates that the owner is an apostle of one of the god-like creatures that are part of this cult.
+e:null
+o:THE END...|e|-
+end
+k:fight_with_him
+d:You jumped out of your hiding place using the unexpected element of surprise and hit the wizard with all your might. He fell to the ground without a sound, there were no signs of life in him.
+e:null
+o:Continue...|n|save_princess
+end
+k:save_princess
+d:You freaked out when you realized that the handcuffed person you see is actually a girl. And when she starts talking, you will find out that she is a princess of a kingdom who has been kidnapped by a wealthy and ruthless sorcerer. She says that the sorcerer kidnapped her to force her father to sign a treaty that would make the kingdom his possession. The princess says that there are several other captives in this house and asks you to help them. With danger and trembling in your heart, you agree and go in search of other captives. After a long search, you find a few more people, whom you free from captivity. After that, you return to the kingdom, and the princess brings you to her father - the king. She tells how you heroically freed her and the other captives, and the king thanks you. You are sent off with honors and you become the hero of this kingdom. You know that this story of the princess and the wizard will stay in your heart forever.
+e:null
+o:THE END...|e|-
+end
